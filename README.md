@@ -82,7 +82,7 @@ It consists of two steps:
 
   ```sh
   > ocamlbuild -use-ocamlfind \
-	    -pkg js_of_ocaml \
+      -pkg js_of_ocaml \
       -pkg tyxml \
       -pkg js_of_ocaml.tyxml \
       hello.byte
