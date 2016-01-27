@@ -91,14 +91,17 @@ It consists of two steps:
 2. Build the Javascript file from the `hello.byte` file with the `js_of_ocaml` command:
 
   ```sh
-  > js_of_ocaml +weak.js --opt 3 -o js/todomvc.js todomvc.byte
+  > js_of_ocaml +weak.js -o hello.js hello.byte
   ```
 
   The command options are:
   - `+weak.js` to include the necessary `weak` package.
-  - `-o js/todomvc.js` to set output file name.
+  - `-o hello.js` to set output file name.
 
   You can add `--opt 3` to optimize more heavily.
+
+## Results
+You can now open hello.html in a browser to see it working.
 
 ## Credit
 
