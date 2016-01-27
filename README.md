@@ -29,7 +29,7 @@ An easy way is to use [opam](https://opam.ocaml.org/). After having installed `o
 
     This will create a `.opam` directory in your home.
 
-  - You need a recent version of OCaml compiler. First check the current version used by `opam`:
+  - You need a recent version of the OCaml compiler. First check the current version used by `opam`:
 
     ```sh
     > opam switch
@@ -44,16 +44,16 @@ An easy way is to use [opam](https://opam.ocaml.org/). After having installed `o
     system  C system  System compiler (4.02.1)
     ```
 
-    The `C` marks the current compiler. Here it's version 4.02.1 version installed. We can see that a more recent version is available (4.02.2). So we will install it with `opam switch 4.02.2`. This won't remove the system compiler as `opam` will install the files in your `.opam` directory.
+    The `C` marks the current compiler. Here version 4.02.1 is installed. We can see that a more recent version is available (4.02.2). So we will install it with `opam switch 4.02.2`. This won't remove the system compiler as `opam` will install the files in your `.opam` directory.
+
+    The following command switches out the current compiler with the newly installed one and sets up your path to use it permanently.
 
     ```sh
     > opam switch 4.02.2
     > eval `opam config env`
     ```
 
-    The second line sets up this new version of ocaml in your path.
-
-  - Let's now install Js_of_ocaml and tyxml.
+  - We can now install Js_of_ocaml and tyxml.
 
     ```sh
     > opam install js_of_ocaml tyxml
