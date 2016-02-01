@@ -56,14 +56,7 @@ An easy way is to use [opam](https://opam.ocaml.org/). After having installed `o
   - We can now install Js_of_ocaml and tyxml.
 
     ```sh
-    > opam install js_of_ocaml tyxml
-    ```
-
-  on a mac, you might have better luck with 
-  
- 
-    ```sh
-    > opam install deriving js_of_ocaml
+    > opam install deriving js_of_ocaml tyxml
     ```
 
   - To make sure you have the latest version, ask `opam` to upgrade the packages if needed:
