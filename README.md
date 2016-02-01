@@ -53,10 +53,10 @@ An easy way is to use [opam](https://opam.ocaml.org/). After having installed `o
     > eval `opam config env`
     ```
 
-  - We can now install Js_of_ocaml and tyxml.
+  - We can now install Js_of_ocaml and tyxml, including optional dependencies.
 
     ```sh
-    > opam install deriving js_of_ocaml tyxml
+    > opam install js_of_ocaml tyxml deriving ppx_deriving reactiveData
     ```
 
   - To make sure you have the latest version, ask `opam` to upgrade the packages if needed:
